@@ -1,0 +1,123 @@
+/* *{
+    outline: #222 solid 1px;
+} */
+
+
+.rankingContainer{
+    margin: auto;
+    text-align: center;
+}
+.rankingItem{
+    width: 80vw;
+    margin:5% auto;
+    transition: .5s;
+    border: #ffcd3c 1px solid;
+    border-radius: 5px;
+    background-color: rgba(256,256,256,0.6);
+}
+.rankingItem:hover{
+    background-color: #fff;
+    transform: translateX(-3px);
+    box-shadow: #bbb 5px 5px 10px;
+}
+.rankingItem:hover .rankingnum{
+    color: #e99400;
+}
+.rankingItem:hover .movieName{
+    color: #e99400;
+}
+.rankingnum{
+    margin: 10px 0;
+    font-size:30px;
+    font-weight: bold;
+    color: #222222;
+    transition: 0.5s;
+}
+.movieName{
+    font-size: 24px;
+    font-weight: bold;
+    color: #222222;
+    transition: 0.5s;
+    margin: 10px 0;
+}
+.movie_img{
+    width: 50vw;
+    vertical-align: middle;
+}
+.rankingIcon-wrap{
+    margin: 20px 0;
+    padding: 10px 0;
+}
+
+.rankingIcon{
+    vertical-align: middle;
+    display: inline-block;
+}
+.rankingIcon>span{
+    font-size: 20px;
+}
+.icon{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    bottom: -5px;
+}
+
+@media screen and (min-width:768px){
+    .rankingItem{
+        vertical-align: middle;
+        position: relative;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+    }
+    .rankingnum{
+        display: inline-block;
+        font-size: 45px;
+        margin: 10px 100px; 
+    }
+
+    .movieName-wrap{
+        display: inline-block;
+        flex-grow: 1;
+    }
+    .movieName{
+        border-right: #e99400 2px solid;
+    }
+    .rankingIcon-wrap{
+        display: inline-block;
+        margin: 20px;
+    }
+    .movie_img{
+        width: 10vw;
+    }
+    
+}
+@media screen and (min-width:1200px){
+    .rankingContainer{
+        max-width:1200px;
+    }
+    .rankingItem{
+        max-width:1200px;
+    }
+}
+/* morebutton */
+.morebutton{
+    width: 100px;
+	margin: 30px auto;
+	text-align: center;
+	padding: 10px 0;
+	display: block;
+	border: 2px solid #ffcd3c;
+	background-color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	outline: none;
+    color: #222222;
+    -webkit-appearance: none;
+    -moz-appearance:none;
+}
+.morebutton:hover{
+    border:#e99400 2px solid;
+    color: #e99400;
+}

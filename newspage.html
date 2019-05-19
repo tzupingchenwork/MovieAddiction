@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MovieAddiction 電癮 | 癮新聞</title>
+    <link rel="icon" type="image/png" href="movieAddiction-img/movie_addiction_LOGO_16x16.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="movieaddiction.css">
+    <link rel="stylesheet" href="newspage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+    <!-- GO TOP -->
+    <a href="#" class="gotop">TOP</a>
+    <!-- CONTROL -->
+    <input type="checkbox" id="navControl">
+    <input type="checkbox" id="searchControl">
+    
+    <header>
+      <div class="headericon"> 
+        <label class="search" for="searchControl"><a class="fas fa-search"></a></label>
+        <a href="javascript:" class="fas fa-user"></a>
+       </div>
+       <label class="menu" for="navControl">
+            <div class="menu-open"></div>
+        </label>
+      <div class="headerlogo">
+        <a href="index.html"><img src="movieAddiction-img/MovieAddiction.png" alt="movieaddictionlogo" class="moblie-navlogo"></a>
+        <a href="index.html"><img src="movieAddiction-img/movie_addiction_LOGO.png" alt="movieaddictionlogo" class="navlogo"><h1>電癮</h1></a>
+      </div>
+      <div class="searchbar-open">
+            <input class="listSearch_block" type="text" name="search" placeholder=" 搜尋關鍵字">
+            <input class="listSearch_btn" type="submit" value="搜尋">
+      </div>
+     
+     <!-- nav -->
+        <nav class="navcontainer">
+            <ul class="navList">
+                <li><a href="reviewpage.html" class="navLink" >癮評</a></li>
+                <li><a href="rankingpage.html" class="navLink"  >癮排行</a></li>
+                <li><a href="newspage.html" class="navLink" style="color:#e99400;" >癮新聞</a></li>
+                <li><a href="eventpage.html" class="navLink" >癮活動</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="fakeheader"></div>
+    <!-- title -->
+    <div class="title"><h2>癮新聞</h2></div>
+    <!-- video news -->
+    <div class="videoNews wow pulse  animated" data-wow-offset="280" style="visibility: visible; animation-name: pulse;">
+        <div class="video">
+                <iframe class="myvideo" width="560" height="315" src="https://www.youtube.com/embed/sN0b8C_TNbg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="myvideo" width="560" height="315" src="https://www.youtube.com/embed/D_wX8c5yLPk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="myvideo" width="560" height="315" src="https://www.youtube.com/embed/85eMTaJbdTs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                
+                <button class="myvideo-btnleft" onclick="plusDivs(-1)">&#10094;</button>
+                <button class="myvideo-btnright" onclick="plusDivs(+1)">&#10095;</button>
+        </div>
+    </div>
+    <!-- newswaterfall -->
+    <div class="title"><h3>更多新聞</h3></div>
+    <div class="newswaterfall">
+        <div class="newsItem wow bounce  animated" data-wow-offset="180" style="animation-name: bounce;">
+            <div class="newsContent">
+                <img src="newspage/7.jpg" alt="新聞圖片">
+                <a href="javascript:"><h3>丹尼爾雷德克里夫將會是下任金鋼狼人選？</h3></a>
+                <p class="newsDate">時間：2019-02-14</p>
+            </div>
+        </div>
+        <div class="newsItem wow bounce  animated" data-wow-offset="180" style="animation-name: bounce;">
+            <div class="newsContent">
+                <img src="newspage/8.jpg" alt="新聞圖片">
+                <a href="javascript:"><h3>華納兄弟計劃開拍《水行俠》恐怖片外傳？題材絕對出乎你意料！</h3></a>
+                <p class="newsDate">時間：2019-02-14</p>
+            </div>
+        </div>
+        <div class="newsItem wow bounce  animated" data-wow-offset="180" style="animation-name: bounce;">
+            <div class="newsContent">
+                <img src="newspage/9.jpg" alt="新聞圖片">
+                <a href="javascript:"><h3>班艾佛列克親口證實：我不再是蝙蝠俠了</h3></a>
+                <p class="newsDate">時間：2019-02-14</p>
+            </div>
+        </div>
+        <div class="newsItem wow bounce  animated" data-wow-offset="180" style="animation-name: bounce;">
+            <div class="newsContent">
+                <img src="newspage/10.png" alt="新聞圖片">
+                <a href="javascript:"><h3>《戀夏500日》導演將執導好萊塢翻拍《你的名字》真人版電影</h3></a>
+                <p class="newsDate">時間：2019-02-14</p>
+            </div>
+        </div>
+        <div class="newsItem wow bounce  animated" data-wow-offset="180" style="animation-name: bounce;">
+            <div class="newsContent">
+                <img src="newspage/11.jpg" alt="新聞圖片">
+                <a href="javascript:"><h3>《絕命毒師》續集電影將率先在Netflix上線</h3></a>
+                <p class="newsDate">時間：2019-02-14</p>
+            </div>
+        </div>
+        <div class="newsItem wow bounce  animated" data-wow-offset="180" style="animation-name: bounce;">
+            <div class="newsContent">
+                <img src="newspage/12.jpg" alt="新聞圖片">
+                <a href="javascript:"><h3>《冰雪奇緣2》前導預告上線</h3></a>
+                <p class="newsDate">時間：2019-02-14</p>
+            </div>
+        </div>
+        <div class="newsItem wow bounce  animated" data-wow-offset="180" style="animation-name: bounce;">
+            <div class="newsContent">
+                <img src="newspage/1.jpg" alt="新聞圖片">
+                <a href="javascript:"><h3>水行俠刷破紀錄成為DC宇宙歷史票房最高</h3></a>
+                <p class="newsDate">時間：2019-02-14</p>
+            </div>
+        </div>
+        <div class="newsItem wow bounce  animated" data-wow-offset="180" style="animation-name: bounce;">
+            <div class="newsContent">
+                <img src="newspage/2.jpg" alt="新聞圖片">
+                <a href="javascript:"><h3>暗黑版霍爾城堡《移動城市》大城吃小城</h3></a>
+                <p class="newsDate">時間：2019-02-14</p>
+            </div>
+        </div>
+        <div class="newsItem wow bounce  animated" data-wow-offset="180" style="animation-name: bounce;">
+            <div class="newsContent">
+                <img src="newspage/3.jpg" alt="新聞圖片">
+                <a href="javascript:"><h3>《90分鐘末日倒數》在臺上映票房亮麗</h3></a>
+                <p class="newsDate">時間：2019-02-14</p>
+            </div>
+        </div>
+        <div class="newsItem wow bounce  animated" data-wow-offset="180" style="animation-name: bounce;">
+            <div class="newsContent">
+                <img src="newspage/4.jpg" alt="新聞圖片">
+                <a href="javascript:"><h3>王建明電影獲得好票房</h3></a>
+                <p class="newsDate">時間：2019-02-14</p>
+            </div>
+        </div>
+        <div class="newsItem wow bounce  animated" data-wow-offset="180" style="animation-name: bounce;">
+            <div class="newsContent">
+                <img src="newspage/5.jpg" alt="新聞圖片">
+                <a href="javascript:"><h3>無敵破壞王票房亮眼</h3></a>
+                <p class="newsDate">時間：2019-02-14</p>
+            </div>
+        </div>
+        <div class="newsItem wow bounce  animated" data-wow-offset="180" style="animation-name: bounce;">
+            <div class="newsContent">
+                <img src="newspage/6.jpg" alt="新聞圖片">
+                <a href="javascript:"><h3>票房九天就「破億」、影迷哭到崩潰還是要看</h3></a>
+                <p class="newsDate">時間：2019-02-14</p>
+            </div>
+        </div>
+       
+       
+    </div>
+        <input type="button" value="載入更多" class="morebutton">
+    <!-- footer -->
+    <div class="fakefooter"></div>
+    <footer>
+        <div class="footer-container">
+        <a href="javascript:" class="fab fa-facebook-f"></a>
+        <a href="javascript:" class="fab fa-twitter"></a>
+        <a href="javascript:" class="fab fa-instagram"></a>
+        <h6>Copyright © MovieAddiction•All Rights Reserved•</h6>
+        </div>
+    </footer>
+    <!--slider js  -->
+    <script>
+            var slideIndex = 1;
+        showDivs(slideIndex);
+        
+        function plusDivs(n) {
+          showDivs(slideIndex += n);
+        }
+        
+        function showDivs(n) {
+          var i;
+          var x = document.getElementsByClassName("myvideo"); 
+          if (n > x.length) {slideIndex = 1} 
+          if (n < 1) {slideIndex = x.length} ;
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none"; 
+          }
+          x[slideIndex-1].style.display = "block"; 
+        }
+        </script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+/* css reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+}
+button{
+    outline:none;
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+input[type=submit], input[type=button]{
+    -webkit-appearance:none;
+    -moz-appearance:none;
+}
+input:focus {
+outline: 0;
+}
+/* rule */
+h3{
+    font-size: 20px;
+}
+p{
+    font-size: 16px;
+}
+/* import font */
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+body{
+  font-family: 'Noto Sans TC', sans-serif,'微軟正黑體';
+}
+
+html{
+    background-image: url(movieAddiction-img/bgimage.png);
+    position: relative;
+}
+
+/* 清除連結 */
+a{
+    text-decoration: none;
+}
+/* gotop */
+.gotop{
+    width: 38px;
+    height: 18px;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 10;
+    padding: 19px 0 0;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: bold;
+    background-size: 100%;
+    text-align: center;
+    color: #222222;
+    border: #ffcd3c 1px solid;
+    border-radius: 50%;
+}
+.gotop:hover {
+    background-color: #e99400;
+    border:0px;
+    border-radius: 50%;
+    color: #fff;
+    transition: all 1s;
+}
+/* header phone */
+header{
+    width: 100vw;
+     height:55px;
+     margin: 0 auto;
+     text-align: center;
+     position: fixed;
+     left: 0;
+     top: 0;
+     right: 0;
+     bottom: 0;
+     z-index: 10;
+     background-color:rgba(253,252,250,1);
+}
+.headerlogo{
+    width: 100%;
+}
+.fakeheader{
+    height: 55px;
+}
+
+
+.headericon{
+   position: absolute;
+   right: 15px;
+   top: 15px;
+}
+.headericon  a{
+     color: #222222;
+     font-size: 20px;
+}
+.fa-search:hover{
+    color: #e99400;
+}
+.fa-user:hover{
+    color: #e99400;
+}
+.menu{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+}
+#navControl{
+	position: fixed;
+	opacity: 0;
+	top: -10px;
+}
+
+.menu-open{
+    position: absolute;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: #222222;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%, 0 40%, 100% 40%, 100% 59%, 0 60%, 0 80%, 100% 80%, 100% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%, 0 40%, 100% 40%, 100% 59%, 0 60%, 0 80%, 100% 80%, 100% 100%, 0 100%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#navControl:checked ~ header .menu-open{
+	-webkit-clip-path:polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    clip-path:polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+    transition: 0.5s;
+    cursor: pointer;
+}
+#navControl:checked ~ header nav{
+    top: -3px;
+	transition: all 1s;
+}
+/* search */
+.search{
+    cursor: pointer;
+}
+#searchControl{
+	position: fixed;
+	opacity: 0;
+	top: -10px;
+}
+.searchbar-open{
+    position: absolute;
+    background-color:rgba(253,252,250,1);
+    right: -200px;
+    top: 15px;
+    transition: all 1s;
+}
+#searchControl:checked ~ header .searchbar-open{
+    position: absolute;
+    right: 100px;
+    z-index: 21;
+    transition: all 1s;
+}
+.listSearch_block{
+	display: inline-block;
+    left: 10px;
+	height: 25px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.listSearch_btn{
+	display: inline-block;
+	right: 15px;
+	width: 45px;
+	height: 30px;
+	cursor: pointer;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.searchbar-open input{
+	border: 2px solid #ffcd3c;
+	color: #222222;
+}
+
+
+/* header pc */
+@media screen and (min-width: 768px){
+    header{
+        width: 100%;
+        height: 150px;
+        background-color:rgba(253,252,250,0.9);
+     }
+     .fakeheader{
+        height: 150px;
+    }
+}
+
+
+/* nav phone*/
+@media screen and (max-width: 767px){
+    .navlogo{
+        display: none;
+    }
+    .moblie-navlogo{
+        height: 50px;
+    }
+    .headerlogo h1{
+        display: inline-block;
+        font-size: 20px;
+        color: #e99400;
+    }
+    .navList > li{
+        margin: 50px 0;
+    }
+    .navList > li > a{
+        color: #222222;
+        font-size: 30px;
+    }
+    .navcontainer{
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(253,252,250,0.9);
+	position: relative;
+	top: -1000px;
+	left: 0;
+	z-index: 20;
+	border: 7px solid transparent;
+	transition: top 1s ease-in-out;
+    overflow: auto;
+    }
+    .navLink:hover{
+        color: #ffcd3c;
+    }
+    
+}
+/* nav pc */
+@media screen and (min-width: 768px){
+    .moblie-navlogo,.menu{
+     display: none;
+    }
+    .navlogo{
+        width: 100px;
+        height: 100px;
+        display: inline-block;
+   }
+    h1{
+        display: inline-block;
+        font-size: 20px;
+        color: #e99400;
+    }
+    li {
+        display: inline-block;
+        text-align: center;
+        margin:5px 20px;
+    }
+    li > a{
+        color: #222222;
+        font-size: 24px;
+    }
+
+    .fakeheader{
+        height: 150px;
+    }
+    .navLink:hover{
+        color: #ffcd3c;
+    }
+}
+
+
+
+/* footer */
+@media screen and (max-width: 767px){
+    .fakefooter{
+        height: 10px;
+    }
+    footer{
+        width: 100vw;
+        position: relative;
+    }
+    .footer-container{
+        margin: auto;
+        text-align: center;
+    }
+    
+    .footer-container > a{
+        color: #e99400;
+        margin: 10px;
+        font-size: 20px;
+        transition: .5s;
+    }
+    .footer-container > h6{
+        color: #e99400;
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 768px){
+.fakefooter{
+    height: 150px;
+}
+footer{
+    width: 100%;
+    position: relative;
+}
+.footer-container{
+    margin: auto;
+    text-align: center;
+}
+
+.footer-container > a{
+    color: #e99400;
+    font-size: 20px;
+    margin: 10px;
+    transition: .5s;
+}
+.footer-container a:hover{
+    color: #ffcd3c;
+}
+.footer-container > h6{
+    color: #e99400;
+    font-size: 12px;
+}
+}
+
+/* title */
+.title{
+    margin:30px 0;
+    margin-left: 5%;
+}
+.title >h2{
+   color: #e99400;
+   font-size: 32px;
+   margin: 20px 0;
+   font-weight: bold;
+}
+.title >h3{
+    color: #222;
+    font-size: 26px;
+    font-weight: bold;
+    margin: 20px 0;
+ }
+@media screen and (min-width: 1024px){
+    .title{
+        width: 1024px;
+        margin-left: 5%;
+    } 
+}

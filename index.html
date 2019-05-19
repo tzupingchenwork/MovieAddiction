@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>MovieAddiction 電癮</title>
+    <link rel="icon" type="image/png" href="movieAddiction-img/movie_addiction_LOGO_16x16.png" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="movieaddiction.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body>
+    <!-- GO TOP -->
+    <a href="#" class="gotop">TOP</a>
+    <!-- CONTROL -->
+    <input type="checkbox" id="navControl">
+    <input type="checkbox" id="searchControl">
+    
+    <header>
+      <div class="headericon"> 
+        <label class="search" for="searchControl"><a class="fas fa-search"></a></label>
+        <a href="javascript:" class="fas fa-user"></a>
+      </div>
+
+       <label class="menu" for="navControl">
+            <div class="menu-open"></div>
+       </label>
+      <div class="headerlogo">
+        <a href="index.html"><img src="movieAddiction-img/MovieAddiction.png" alt="movieaddictionlogo" class="moblie-navlogo"></a>
+        <a href="index.html"><img src="movieAddiction-img/movie_addiction_LOGO.png" alt="movieaddictionlogo" class="navlogo"><h1>電癮</h1></a>
+      </div>
+      <div class="searchbar-open">
+            <input class="listSearch_block" type="text" name="search" placeholder=" 搜尋關鍵字">
+            <input class="listSearch_btn" type="submit" value="搜尋">
+      </div>
+     
+     <!-- nav -->
+        <nav class="navcontainer">
+            <ul class="navList">
+                <li><a href="reviewpage.html" class="navLink" >癮評</a></li>
+                <li><a href="rankingpage.html" class="navLink"  >癮排行</a></li>
+                <li><a href="newspage.html" class="navLink" >癮新聞</a></li>
+                <li><a href="eventpage.html" class="navLink" >癮活動</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="fakeheader"></div>
+<!-- banner -->
+<div class="banner">
+    <div class="slider wow pulse  animated" data-wow-offset="280" style="visibility: visible; animation-name: pulse;">
+            <div class="mySlides_wrap">
+               <a href="#"><img class="mySlides" src="index/slider/slider1.png" style="display:none"></a>
+               <a href="#"><img class="mySlides" src="index/slider/1.png" ></a>
+               <a href="#"><img class="mySlides" src="index/slider/slider-event.png" style="display:none"></a>
+            </div>
+            <div class="dotbtn_wrap">
+                <div class="dotbtn demo opacity-off" onclick="currentDiv(1)"></div>
+                <div class="dotbtn demo opacity-off" onclick="currentDiv(2)"></div>
+                <div class="dotbtn demo opacity-off" onclick="currentDiv(3)"></div>
+            </div>
+            <div class="imgbtn_wrap">
+                  <div class="imgbtn">
+                    <img class="demo opacity-off" src="index/slider/slider1.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
+                  </div>
+                  <div class="imgbtn">
+                    <img class="demo opacity-off" src="index/slider/1.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
+                  </div>
+                  <div class="imgbtn">
+                    <img class="demo opacity-off" src="index/slider/slider-event.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
+                  </div>
+            </div>
+    </div>
+</div>
+<!-- indexranking -->
+<div class="title"><h2>最新排行</h2></div>
+<div class="indexRanking">
+        <div class="indexRanking-content wow bounce  animated" data-wow-offset="180" style="animation-name: bounce;"> 
+            <a href="moviepage.html"><img src="index/ranking-img/1.jpg" alt=""></a> 
+            <div class="indexRanking-score">
+               <p>NO.1</p>
+               <p> IMDB 8.6</p>
+               <p>Tomatoes  98%</p>
+               <p>癮分數 5/5</p>
+            </div>
+            <a href="moviepage.html">
+                <h3>蜘蛛人：新宇宙</h3>
+            </a>
+        </div>
+        <div class="indexRanking-content wow bounce  animated" data-wow-offset="180" data-wow-delay=".2s" style="animation-delay: 0.2s; animation-name: bounce;"> 
+                <a href="javascript:"><img src="index/ranking-img/2.jpg" alt=""></a> 
+                <div class="indexRanking-score"> 
+                   <p>NO.2</p>
+                   <p> IMDB 8.6</p>
+                   <p>Tomatoes  98%</p>
+                   <p>癮分數 5/5</p>
+                </div>
+                <a href="javascript:">
+                    <h3>王建明</h3>
+                </a>
+        </div>
+        <div class="indexRanking-content wow bounce  animated" data-wow-offset="180" data-wow-delay=".4s" style="animation-delay: 0.4s; animation-name: bounce;">  
+                <a href="javascript:"><img src="index/ranking-img/3.jpg" alt=""></a> 
+                <div class="indexRanking-score"> 
+                    <p>NO.3</p>
+                   <p> IMDB 8.6</p>
+                   <p>Tomatoes  98%</p>
+                   <p>癮分數 5/5</p>
+                </div>
+                <a href="javascript:">
+                    <h3>班恩回家</h3>
+                </a>
+        </div>
+        <div class="indexRanking-content wow bounce  animated" data-wow-offset="180" data-wow-delay=".6s" style="animation-delay: 0.6s; animation-name: bounce;"> 
+                <a href="javascript:"><img src="index/ranking-img/4.jpg" alt=""></a> 
+                <div class="indexRanking-score"> 
+                    <p>NO.4</p>
+                   <p> IMDB 8.6</p>
+                   <p>Tomatoes  98%</p>
+                   <p>癮分數 5/5</p>
+                </div>
+                <a href="javascript:">
+                    <h3>水行俠</h3>
+                </a>
+        </div>
+        <div class="indexRanking-content wow bounce  animated" data-wow-offset="180" data-wow-delay=".8s" style="animation-delay: 0.8s; animation-name: bounce;">  
+                <a href="javascript:"><img src="index/ranking-img/5.jpg" alt=""></a> 
+                <div class="indexRanking-score"> 
+                    <p>NO.5</p>
+                   <p> IMDB 8.6</p>
+                   <p>Tomatoes  98%</p>
+                   <p>癮分數 5/5</p>
+                </div>
+                <a href="javascript:">
+                    <h3>大黃蜂</h3>
+                </a>
+        </div>
+
+</div>
+<!--indexReview-->
+<div class="title"><h2>熱門癮評</h2></div>
+<div class="indexReview">
+   
+        <div class="indexReview-container wow fadeInRight  animated" data-wow-offset="250" style="animation-name: fadeInRight;">
+            <div class="indexReview-imgarea">
+               <img src="index/review-img/2.jpg" alt="雲端情人" class="indexReview-img"> 
+            </div>
+            
+            <div class="indexReview-content">
+               <a href="javascript:" class="hrefnone"><h3>雲端情人-The past is just a story we tell ourselves. </h3></a>
+                <p>你是否曾有過這種時候？在某個夜晚獨自待在陽台，遙望高樓中寂寥的燈光，看似繁華的景象，卻讓人感到無限空虛及愁悵，這樣矛盾的思緒好比此部電影，似寂寞非寂寞，反之亦然。<a href="" class="hrefnone" style="color:#fff;">[閱讀更多]</a></p>
+                <div class="indexReview-icon">
+                   <i class="fas fa-heart"></i><span>50</span>
+                   <i class="fas fa-comment"></i><span>50</span>
+                </div>
+            </div>
+        </div> 
+        <div class="indexReview-container wow fadeInLeft  animated" data-wow-offset="250" style="animation-name: fadeInLeft;">
+               <img src="index/review-img/1.jpg" alt="比悲傷個悲傷" class="indexReview-img-2"> 
+                  
+            <div class="indexReview-content">
+                <a href="javascript:" class="hrefnone"><h3>比悲傷更悲傷的故事，是無法表現悲傷。</h3></a>
+                <p>片名比悲傷更悲傷的故事，劇情如同片名般的悲傷，然而，我們看片名便可知道這不是什麼美好的結局，在有心理準備的情況下且完全投入男女主角身上的話，還是無法招架這個故事。它是悲傷的，<a href="" class="hrefnone" style="color:#fff;">[閱讀更多]</a></p>
+            <div class="indexReview-icon">
+                <i class="fas fa-heart"></i><span>50</span>
+                <i class="fas fa-comment"></i><span>50</span>
+            </div>
+            
+            </div>
+            
+        </div>
+</div>
+
+<!--indexNews-->
+<div class="title"><h2>熱門新聞</h2></div>
+<div class="indexNews">
+        <div class="indexNews-Container wow fadeInRight  animated" data-wow-offset="250" style="animation-name: fadeInRight;">
+            <div class="indexNews-item1" >
+                <div class="bookmark"><div class="bookmark-word" >熱門</div></div>
+               <a href="javascript:"><h3 class="newsheading">華納兄弟計劃開拍《水行俠》恐怖片外傳？題材絕對出乎你意料！</h3></a>
+                <p class="newsDate">2019-2-10</p>
+            </div>
+            
+        </div>
+        <div class="indexNews-Container">
+            <div class="indexNews-item2 wow fadeInLeft  animated" data-wow-offset="250" style="animation-name: fadeInLeft;">
+                <div class="bookmark"><div class="bookmark-word" >熱門</div></div>
+                   <a href="javascript:"><h3 class="newsheading">滿滿的殭屍潮不再～派拉蒙暫時停止發展《末日之戰》的電影續集！</h3></a>
+                    <p class="newsDate">2019-2-10</p>
+                </div>
+        </div>
+        
+
+</div>
+<!-- footer -->
+    <div class="fakefooter"></div>
+    <footer>
+        <div class="footer-container">
+        <a href="javascript:" class="fab fa-facebook-f"></a>
+        <a href="javascript:" class="fab fa-twitter"></a>
+        <a href="javascript:" class="fab fa-instagram"></a>
+        <h6>Copyright © MovieAddiction•All Rights Reserved•</h6>
+        </div>
+    </footer>
+    <!--slider js  -->
+    <script>
+            function currentDiv(n) {
+              showDivs(slideIndex = n);
+            }
+            
+            function showDivs(n) {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              var dots = document.getElementsByClassName("demo");
+              if (n > x.length) {slideIndex = 1}
+              if (n < 1) {slideIndex = x.length}
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" opacity-off", "");
+              }
+              x[slideIndex-1].style.display = "block";
+              dots[slideIndex-1].className += " opacity-off";
+            }
+    </script>
+</body>
+</html>
